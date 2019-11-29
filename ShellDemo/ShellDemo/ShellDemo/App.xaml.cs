@@ -10,7 +10,7 @@ namespace ShellDemo
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new View.AppShell();
         }
 
         protected override void OnStart()
