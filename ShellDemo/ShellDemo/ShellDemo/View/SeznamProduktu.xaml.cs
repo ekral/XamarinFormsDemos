@@ -16,5 +16,15 @@ namespace ShellDemo.View
         {
             InitializeComponent();
         }
+
+        private async void ToolbarItemNovy_Odstran_Clicked(object sender, EventArgs e)
+        {
+            bool smazat = await DisplayAlert("Odstranění produktu", "Opravdu chceš odstranit vybraný produkt?", "Smazat", "Zrušit");
+        }
+
+        private async void ToolbarItemNovy_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.Navigation.PushModalAsync(new NavigationPage(new View.NovyProdukt()));
+        }
     }
 }

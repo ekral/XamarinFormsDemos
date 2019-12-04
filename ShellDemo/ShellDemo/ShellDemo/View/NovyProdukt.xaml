@@ -4,14 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ShellDemo.View.SeznamProduktu">
+             x:Class="ShellDemo.View.NovyProdukt">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Odstranit" Clicked="ToolbarItemNovy_Odstran_Clicked" />
-        <ToolbarItem Text="Nový" Clicked="ToolbarItemNovy_Clicked" />
+        <ToolbarItem Text="Uložit" Clicked="ToolbarItemUloz_Clicked" />
+        <ToolbarItem Text="Zrušit" Clicked="ToolbarItemZrus_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Seznam produktu"
+            <Label Text="Novy produkt"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
