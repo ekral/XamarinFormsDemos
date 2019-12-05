@@ -12,13 +12,19 @@ namespace ShellDemo.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class NovyProdukt : ContentPage
     {
+        private ViewModel.NovyProduktViewModel viewModel;
+
         public NovyProdukt()
         {
+            BindingContext = viewModel = new ViewModel.NovyProduktViewModel();
+
             InitializeComponent();
         }
 
         private async void ToolbarItemUloz_Clicked(object sender, EventArgs e)
         {
+            await viewModel.Uloz();
+
             await Shell.Current.Navigation.PopModalAsync();
         }
 

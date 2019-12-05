@@ -6,28 +6,29 @@
              xmlns:view="clr-namespace:ShellDemo.View"
              mc:Ignorable="d"
              x:Class="ShellDemo.View.AppShell">
-    <FlyoutItem Title="Zákazník">
-        <Tab Title="Zákazník">
-            <ShellContent  ContentTemplate="{x:DataTemplate view:SeznamProduktu}" />
-        </Tab>
-        <Tab Title="Produkty">
-            <ShellContent  ContentTemplate="{x:DataTemplate view:SeznamProduktu}" />
-        </Tab>
-        <Tab Title="Košík" >
-            <ShellContent ContentTemplate="{x:DataTemplate view:SeznamProduktu}" />
-        </Tab>
-        <Tab Title="Objednávky">
-            <ShellContent  ContentTemplate="{x:DataTemplate view:SeznamProduktu}" />
-        </Tab>
-    </FlyoutItem>
     <FlyoutItem Title="Administrátor">
         <Tab Title="Správa produktů">
             <ShellContent  ContentTemplate="{x:DataTemplate view:SeznamProduktu}" />
         </Tab>
         <Tab Title="Správa objednávek" >
-            <ShellContent ContentTemplate="{x:DataTemplate view:SeznamProduktu}" />
+            <ShellContent ContentTemplate="{x:DataTemplate view:PrazdneView}" />
         </Tab>
     </FlyoutItem>
+    <FlyoutItem Title="Zákazník">
+        <Tab Title="Zákazník">
+            <ShellContent  ContentTemplate="{x:DataTemplate view:PrazdneView}" />
+        </Tab>
+        <Tab Title="Produkty">
+            <ShellContent  ContentTemplate="{x:DataTemplate view:PrazdneView}" />
+        </Tab>
+        <Tab Title="Košík" >
+            <ShellContent ContentTemplate="{x:DataTemplate view:PrazdneView}" />
+        </Tab>
+        <Tab Title="Objednávky">
+            <ShellContent  ContentTemplate="{x:DataTemplate view:PrazdneView}" />
+        </Tab>
+    </FlyoutItem>
+    
    
     
 </Shell>

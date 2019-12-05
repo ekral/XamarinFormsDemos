@@ -6,6 +6,22 @@ namespace ShellDemo
 {
     public partial class App : Application
     {
+        private static Model.EshopDatabase _databaze;
+
+        public static Model.EshopDatabase Databaze
+        {
+            get 
+            { 
+                if(_databaze == null)
+                {
+                    _databaze = new Model.EshopDatabase("data.db3");
+                    _databaze.EnsureCreated();
+                }
+
+                return _databaze; 
+            }
+        }
+
         public App()
         {
             InitializeComponent();
