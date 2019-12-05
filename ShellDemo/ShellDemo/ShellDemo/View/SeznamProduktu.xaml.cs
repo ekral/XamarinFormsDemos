@@ -23,7 +23,7 @@ namespace ShellDemo.View
 
         private async void ToolbarItemNovy_Odstran_Clicked(object sender, EventArgs e)
         {
-            bool smazat = await DisplayAlert("Odstranění produktu", "Opravdu chceš odstranit vybraný produkt?", "Odstranit", "Zrušit");
+            bool smazat = await DisplayAlert("Smazaní produktu", "Opravdu chceš smazat vybraný produkt?", "Smazat", "Zrušit");
             
             if (smazat)
             {

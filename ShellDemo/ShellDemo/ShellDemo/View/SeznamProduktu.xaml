@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              x:Class="ShellDemo.View.SeznamProduktu">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Odstranit" Clicked="ToolbarItemNovy_Odstran_Clicked" />
+        <ToolbarItem Text="Smazat" Clicked="ToolbarItemNovy_Odstran_Clicked" />
         <ToolbarItem Text="Nový" Clicked="ToolbarItemNovy_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
