@@ -15,7 +15,7 @@ namespace ShellDemo
                 if(_databaze == null)
                 {
                     _databaze = new Model.EshopDatabase("data.db3");
-                    _databaze.EnsureCreated();
+                    _databaze.EnsureCreated().Wait();
                 }
 
                 return _databaze; 
