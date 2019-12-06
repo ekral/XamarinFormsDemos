@@ -46,8 +46,10 @@ namespace ShellDemo.Model
             return connection.DeleteAsync<Produkt>(produktId);
         }
 
-        // TODO Update product
-
+        public Task<int> UpdateProductAsync(Produkt item)
+        {
+            return connection.UpdateAsync(item);
+        }
 
 
     }
