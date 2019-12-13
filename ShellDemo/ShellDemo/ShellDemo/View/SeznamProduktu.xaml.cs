@@ -37,9 +37,18 @@ namespace ShellDemo.View
             await Shell.Current.Navigation.PushModalAsync(new NavigationPage(new View.NovyProdukt()));
         }
 
+        private async void ToolbarItem_Clicked(object sender, EventArgs e)
+        {
+            if (viewModel.ZvolenyProdukt != null)
+            {
+                EditaceProduktu page = new View.EditaceProduktu(viewModel.ZvolenyProdukt);
+                await Shell.Current.Navigation.PushModalAsync(new NavigationPage(page));
+            }
+        }
         protected async override void OnAppearing()
         {
             await viewModel.NactiProdukty();
         }
+
     }
 }

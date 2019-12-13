@@ -7,6 +7,7 @@
              x:Class="ShellDemo.View.SeznamProduktu">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Smazat" Clicked="ToolbarItemNovy_Odstran_Clicked" />
+        <ToolbarItem Text="Editovat" Clicked="ToolbarItem_Clicked"/>
         <ToolbarItem Text="Nový" Clicked="ToolbarItemNovy_Clicked" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
